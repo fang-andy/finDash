@@ -51,7 +51,6 @@ const gridTemplateSmallScreens = `
 
 const Dashboard = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1200px)");
-
   return (
     <Box
       width="100%"
@@ -62,12 +61,12 @@ const Dashboard = () => {
         isAboveMediumScreens
           ? {
               gridTemplateColumns: "repeat(3, minmax(370px, 1fr))",
-              gridTemplateRows: "repeat(10, minmax(60px, 1fr)",
+              gridTemplateRows: "repeat(10, minmax(60px, 1fr))",
               gridTemplateAreas: gridTemplateLargeScreens,
             }
           : {
-              gridTemplateColumns: "1fr",
-              gridTemplateRows: "80px",
+              gridAutoColumns: "1fr",
+              gridAutoRows: "80px",
               gridTemplateAreas: gridTemplateSmallScreens,
             }
       }
