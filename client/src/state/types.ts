@@ -32,7 +32,7 @@ export interface GetKpisResponse {
   dailyDate: Array<Day>;
 }
 
-export interface Bar {
+export interface BarType {
   dataKey: string;
   fill: string;
 }
