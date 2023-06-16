@@ -8,7 +8,7 @@ import {
 } from "@/state/api";
 import { Box, Typography, useTheme } from "@mui/material";
 import { DataGrid, GridCellParams } from "@mui/x-data-grid";
-import React, { useMemo } from "react";
+import { useMemo } from "react";
 import { Cell, Pie, PieChart } from "recharts";
 
 const Row3 = () => {
@@ -30,7 +30,7 @@ const Row3 = () => {
             },
             {
               name: `${key} of Total`,
-              value: totalExpenses - value,
+              value: totalExpenses - (value),
             },
           ];
         }
